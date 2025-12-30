@@ -196,3 +196,7 @@ This is peak theoretical FLOPS. The real value may be about 50-90% of that even 
 2. understanding and mitigating memory bound vs compute bound
 3. triton (CUDA kernels for the weak)
 4. nccl/torch.distributed beyond DDP
+
+## Attribution
+
+All images in this document were sourced from NVIDIA’s official CUDA introductory materials and belong to NVIDIA. Used here for educational/documentation purposes only. NVIDIA and CUDA are trademarks or registered trademarks of NVIDIA Corporation. No claim of ownership of the original images is being made.
