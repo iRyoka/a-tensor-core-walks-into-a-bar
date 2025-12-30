@@ -2,7 +2,8 @@
 
 # 1. What is CUDA (Compute Unified Device Architecture)
 
-> [!NOTE] Main references: 
+> [!TIP]
+> Main references: 
 > https://docs.nvidia.com/cuda/cuda-programming-guide/index.html (very good!)
 > https://www.cse.iitd.ac.in/~rijurekha/col730_2022/cudabook.pdf (also very good, but somewhat obsolete in fine details)
 > 
