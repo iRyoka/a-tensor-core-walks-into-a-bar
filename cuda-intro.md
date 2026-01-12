@@ -105,8 +105,9 @@ Most CUDA instructions execute on scalar FP32 or INT32 ALUs, while Tensor Core o
 
 
 
-> [!TIP] For an extra credit
- given cc > 9.0 thread blocks may be grouped in Thread Block Clusters. TBC's are executed in a single GPC and allow TBC-wide synchronization and a number of reduction-like operations. This allows cooperative reductions and broadcasts across blocks in the cluster. See [Cooperative Groups](https://docs.nvidia.com/cuda/cuda-programming-guide/04-special-topics/cooperative-groups.html) for details.
+> [!TIP] 
+> For an extra credit
+> given cc > 9.0 thread blocks may be grouped in Thread Block Clusters. TBC's are executed in a single GPC and allow TBC-wide synchronization and a number of reduction-like operations. This allows cooperative reductions and broadcasts across blocks in the cluster. See [Cooperative Groups](https://docs.nvidia.com/cuda/cuda-programming-guide/04-special-topics/cooperative-groups.html) for details.
 
 The instructions (memory copying, kernels) are scheduled sequentially within instruction queues called **CUDA streams**. All blocks of the same kernel/grid are scheduled within the same stream and the next instruction on the stream is scheduled only once all blocks complete (i.e. kernel-level scheduling is still sequential). The instructions placed on different streams are scheduled asynchronously unless synchronized explicitly.
 ### Black sheeps
